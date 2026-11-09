@@ -1,0 +1,15 @@
+{
+    "model": "XGBoost",
+    "training_rows": 2922480,
+    "validation_rows": 28512,
+    "training_start": "2013-01-29",
+    "training_end": "2017-07-30",
+    "validation_start": "2017-07-31",
+    "validation_end": "2017-08-15",
+    "training_time_seconds": 44.26,
+    "metrics": {
+        "MAE": 59.31756982751256,
+        "RMSE": 200.21250512746266,
+        "WAPE": 12.697948211888885
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "warehouse_stock_units": 2851,
+    "vehicle_capacity_units": 100,
+    "emission_factor_kg_co2e_per_km": 0.27,
+    "trip_type": "Round trip",
+    "baseline_emissions_kg_co2e": 98.28,
+    "optimized_emissions_kg_co2e": 91.8,
+    "emission_difference_kg_co2e": 6.48,
+    "percentage_emission_reduction": 6.59
+}

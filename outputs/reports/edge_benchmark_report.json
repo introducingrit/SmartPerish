@@ -1,0 +1,13 @@
+{
+    "model": "XGBoost Local Edge Inference",
+    "test_records_per_run": 100,
+    "benchmark_iterations": 100,
+    "mean_latency_ms": 3.2815,
+    "median_latency_ms": 3.2673,
+    "p95_latency_ms": 3.4753,
+    "throughput_records_per_second": 30473.91,
+    "model_size_mb": 6.71,
+    "negative_raw_predictions": 9,
+    "negative_final_predictions": 0,
+    "prediction_validation": "PASSED"
+}

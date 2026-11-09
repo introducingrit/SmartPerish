@@ -1,0 +1,11 @@
+{
+    "optimization_status": "Optimal",
+    "warehouse_stock_units": 2851,
+    "total_delivered_units": 2851,
+    "total_unmet_units": 713,
+    "total_vehicles": 29,
+    "transport_cost_inr": 70372.0,
+    "carbon_emissions_kg_co2e": 91.8,
+    "carbon_cost_inr": 459.0,
+    "combined_objective_value": 783831.0
+}

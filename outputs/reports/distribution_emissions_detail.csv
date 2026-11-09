@@ -1,0 +1,7 @@
+method,store,delivered_units,vehicles_required,one_way_distance_km,total_vehicle_km,emissions_kg_co2e
+Baseline,STORE_1,739,8,6.0,96.0,25.92
+Baseline,STORE_2,926,10,5.0,100.0,27.0
+Baseline,STORE_3,1186,12,7.0,168.0,45.36
+Optimized,STORE_1,900,9,6.0,108.0,29.16
+Optimized,STORE_2,1157,12,5.0,120.0,32.4
+Optimized,STORE_3,794,8,7.0,112.0,30.24

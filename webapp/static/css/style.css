@@ -1,0 +1,439 @@
+
+/* ==========================================
+   SMARTPERISH - COMPLETE DASHBOARD CSS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7f6;
+    color: #263238;
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar {
+    width: 255px;
+    background: #142b35;
+    color: white;
+    padding: 28px 18px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+}
+
+.brand {
+    padding: 0 12px;
+    margin-bottom: 45px;
+}
+
+.brand h2 {
+    font-size: 25px;
+    color: #70d6a3;
+}
+
+.brand p {
+    color: #aebdc3;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar nav a {
+    color: #c4d0d4;
+    text-decoration: none;
+    padding: 14px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: #244b4c;
+    color: #75e0aa;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding: 15px 12px;
+    border-top: 1px solid #36505a;
+}
+
+.sidebar-footer p {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.sidebar-footer span {
+    color: #70d6a3;
+    font-size: 12px;
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.main-content {
+    margin-left: 255px;
+    width: calc(100% - 255px);
+    padding: 35px 40px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+    gap: 15px;
+}
+
+.topbar h1 {
+    font-size: 27px;
+    color: #203b45;
+}
+
+.topbar p {
+    color: #829096;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.system-status {
+    background: white;
+    border: 1px solid #e4ebe8;
+    border-radius: 25px;
+    padding: 10px 17px;
+    font-size: 12px;
+    color: #398b63;
+    white-space: nowrap;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #39b879;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+#last-updated {
+    display: block;
+    color: #899995;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+/* REFRESH BUTTON */
+
+.refresh-btn {
+    background: #287b59;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.refresh-btn:hover {
+    background: #195d41;
+}
+
+.refresh-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+section {
+    scroll-margin-top: 25px;
+}
+
+section h2 {
+    font-size: 19px;
+    color: #263f48;
+    margin-bottom: 20px;
+}
+
+.dashboard-section {
+    margin-top: 38px;
+}
+
+/* ==========================================
+   OVERVIEW CARDS
+========================================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.stat-card {
+    background: white;
+    padding: 23px;
+    border-radius: 12px;
+    border: 1px solid #e8eeeb;
+    box-shadow: 0 3px 12px rgba(25, 55, 45, 0.035);
+    transition: 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 20px rgba(25, 55, 45, 0.08);
+}
+
+.stat-card p {
+    color: #829096;
+    font-size: 12px;
+    min-height: 30px;
+}
+
+.stat-card h2 {
+    font-size: 27px;
+    margin: 12px 0;
+    color: #287b59;
+}
+
+.stat-card span {
+    font-size: 11px;
+    color: #a0aaad;
+}
+
+/* ==========================================
+   PANELS
+========================================== */
+
+.panel {
+    background: white;
+    border: 1px solid #e8eeeb;
+    border-radius: 12px;
+    padding: 25px;
+    min-height: 130px;
+    box-shadow: 0 3px 12px rgba(25, 55, 45, 0.035);
+}
+
+.panel > p {
+    color: #829096;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.panel h3 {
+    color: #294b42;
+    font-size: 15px;
+    margin: 25px 0 12px;
+}
+
+/* ==========================================
+   CHARTS
+========================================== */
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin: 20px 0 25px;
+}
+
+.chart-container canvas {
+    max-width: 100%;
+}
+
+/* ==========================================
+   DATA TABLES
+========================================== */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 15px 0 25px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+}
+
+.data-table th {
+    background: #edf5f0;
+    color: #28634b;
+    padding: 13px;
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 13px;
+    border-bottom: 1px solid #edf0ee;
+    color: #52656a;
+}
+
+.data-table tr:hover {
+    background: #f7faf8;
+}
+
+/* ==========================================
+   SUMMARY CARDS
+========================================== */
+
+.data-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.mini-card {
+    background: #f4f8f5;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e8eeeb;
+}
+
+.mini-card span {
+    display: block;
+    color: #84938b;
+    font-size: 11px;
+    margin-bottom: 9px;
+}
+
+.mini-card strong {
+    color: #267a54;
+    font-size: 19px;
+    overflow-wrap: anywhere;
+}
+
+.data-note {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #87938d;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    margin-top: 55px;
+    padding: 20px 0;
+    border-top: 1px solid #e0e8e4;
+    text-align: center;
+    color: #9aa7a9;
+    font-size: 12px;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content {
+        padding: 30px 25px;
+    }
+
+    .data-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .app-container {
+        display: block;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 18px;
+    }
+
+    .brand {
+        margin-bottom: 18px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 8px;
+    }
+
+    .sidebar nav a {
+        white-space: nowrap;
+        padding: 10px 12px;
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 25px 17px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .topbar-actions {
+        flex-wrap: wrap;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .data-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chart-container {
+        height: 250px;
+    }
+}

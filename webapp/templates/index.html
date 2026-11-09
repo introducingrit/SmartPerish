@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartPerish | Supply Chain Intelligence</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <h2>SmartPerish</h2>
+            <p>Supply Chain Intelligence</p>
+        </div>
+
+        <nav id="sidebar-navigation">
+            <a href="#overview" class="active">Overview</a>
+            <a href="#forecast">Demand Forecast</a>
+            <a href="#inventory">Inventory</a>
+            <a href="#distribution">Distribution</a>
+            <a href="#carbon">Carbon Analytics</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Edge AI Enabled</p>
+            <span id="connection-status">Checking connection...</span>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard Overview</h1>
+                <p>Perishable Goods Supply Chain Management</p>
+
+                <small id="last-updated">
+                    Last updated: Not yet loaded
+                </small>
+            </div>
+
+            <div class="topbar-actions">
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    System Online
+                </div>
+
+                <button id="refresh-btn"
+                        class="refresh-btn"
+                        onclick="refreshDashboard()">
+
+                    ↻ Refresh Data
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- OVERVIEW -->
+        <section id="overview">
+
+            <h2>Performance Overview</h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <p>Forecast Accuracy (WAPE)</p>
+                    <h2>Loading...</h2>
+                    <span>Validation result</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Available Warehouse Stock</p>
+                    <h2>Loading...</h2>
+                    <span>Simulated inventory units</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Vehicles Required</p>
+                    <h2>Loading...</h2>
+                    <span>Optimized distribution</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Carbon Emissions</p>
+                    <h2>Loading...</h2>
+                    <span>Simulated distribution</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEMAND FORECAST -->
+        <section id="forecast" class="dashboard-section">
+
+            <h2>Demand Forecasting</h2>
+
+            <div class="panel">
+
+                <p>Seven-day demand forecast</p>
+
+                <div class="chart-container">
+                    <canvas id="forecastChart"></canvas>
+                </div>
+
+                <div id="forecast-content">
+                    Loading forecast data...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INVENTORY -->
+        <section id="inventory" class="dashboard-section">
+
+            <h2>Inventory Management</h2>
+
+            <div class="panel">
+
+                <p>Expiry alerts and replenishment recommendations</p>
+
+                <div id="inventory-content">
+                    Loading inventory data...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DISTRIBUTION -->
+        <section id="distribution" class="dashboard-section">
+
+            <h2>Distribution Optimization</h2>
+
+            <div class="panel">
+
+                <p>Optimized warehouse-to-store delivery plan</p>
+
+                <div class="chart-container">
+                    <canvas id="distributionChart"></canvas>
+                </div>
+
+                <div id="distribution-content">
+                    Loading distribution data...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARBON ANALYTICS -->
+        <section id="carbon" class="dashboard-section">
+
+            <h2>Carbon Footprint Analytics</h2>
+
+            <div class="panel">
+
+                <p>Baseline versus optimized carbon emissions</p>
+
+                <div class="chart-container">
+                    <canvas id="carbonChart"></canvas>
+                </div>
+
+                <div id="carbon-content">
+                    Loading carbon data...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            SmartPerish | Edge AI Powered Supply Chain Optimization
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- CHART.JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- DASHBOARD JAVASCRIPT -->
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+</html>

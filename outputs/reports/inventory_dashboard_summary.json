@@ -1,0 +1,14 @@
+{
+    "reference_date": "2017-08-22",
+    "total_batches": 30,
+    "total_stock_units": 865,
+    "expired_stock_units": 0,
+    "critical_expiry_batches": 0,
+    "warning_expiry_batches": 0,
+    "total_requested_units": 2006,
+    "total_fulfilled_units": 1907,
+    "total_unfulfilled_units": 99,
+    "fulfilment_rate_percent": 95.06,
+    "items_requiring_reorder": 13,
+    "total_recommended_reorder_units": 3564
+}

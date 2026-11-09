@@ -1,0 +1,4 @@
+store,required_units,delivered_units,unmet_units,distance_km,vehicles_required,transport_cost
+STORE_1,924,900,24,6.0,9,11340.0
+STORE_2,1157,1157,0,5.0,12,12170.0
+STORE_3,1483,794,689,7.0,8,11676.0

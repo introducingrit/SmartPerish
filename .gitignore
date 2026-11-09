@@ -1,0 +1,43 @@
+﻿# Python environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+kaggle.json
+**/kaggle.json
+*.pem
+*.key
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw Kaggle dataset
+data/raw/*
+!data/raw/README.md
+
+# Large processed datasets
+data/processed/*.parquet
+data/processed/*.csv
+
+# Large generated prediction files
+outputs/reports/baseline_predictions.csv
+outputs/reports/xgboost_predictions.csv
+outputs/reports/forecast_next_7_days.csv
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local generated directory listing
+project_structure.txt

@@ -1,0 +1,15 @@
+
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+pyarrow
+kaggle
+xgboost
+pulp==3.3.0
+onnx
+onnxruntime
+onnxmltools
+skl2onnx
+flask
