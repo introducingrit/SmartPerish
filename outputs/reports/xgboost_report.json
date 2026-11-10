@@ -6,7 +6,7 @@
     "training_end": "2017-07-30",
     "validation_start": "2017-07-31",
     "validation_end": "2017-08-15",
-    "training_time_seconds": 44.26,
+    "training_time_seconds": 33.8,
     "metrics": {
         "MAE": 59.31756982751256,
         "RMSE": 200.21250512746266,
